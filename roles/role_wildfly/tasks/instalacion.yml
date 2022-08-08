@@ -1,0 +1,15 @@
+---
+# task file for wildfly
+
+- name: "Descargando e war"
+  get_url:
+    src: https://raw.githubusercontent.com/aeimer/java-example-helloworld-war/master/dist/helloworld.war
+    dest: '{{ path_war }}'
+  register: ware_name
+
+- name: Deploy el nuevo war
+  jboss:
+    src: '{{ path_war }}/{{ war_name }}'
+    deployment: '{{ path_deploy }}/{{ ware_name }}'
+    state: present    
+
