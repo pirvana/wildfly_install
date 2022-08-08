@@ -1,7 +1,7 @@
 ---
 # task file for wildfly
 - name: Download WAR to server
-  command: wget {{ url_war }} -O {{ path_war }}/{{ war_name }}
+  command: curl -O {{ url_war }} {{ path_war }}
   register: ware_name
 
 - name: backup war
