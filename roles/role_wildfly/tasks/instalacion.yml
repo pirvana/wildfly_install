@@ -4,6 +4,6 @@
   command: wget {{ war_url }} -O {{ path_deploy }}/{{ ware_name }}
 
 - name: backup war
-  shell: "cp {{ path_war }}/{{ war_name }} {{ path_deploy }}/{{ ware_name }}"
+  shell: "cp {{ path_war }}/{{ war_name }} {{ path_deploy }}/{{ war_name }}"
  
 
