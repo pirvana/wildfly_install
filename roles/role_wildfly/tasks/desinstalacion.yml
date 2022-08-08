@@ -1,4 +1,4 @@
-- name: Undeploy el war
-  jboss:
-    deployment: '{{ path_deploy }}/{{ ware_name }}'
+- name: Delete remote war file
+  file: 
+    path: '{{ path_deploy }}/{{ ware_name }}' 
     state: absent
