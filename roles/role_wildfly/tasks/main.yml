@@ -5,4 +5,7 @@
 
 - name: Instalacion del ware
   include_tasks: instalacion.yml
+ 
+- name: DESInstalacion del ware
+  include_tasks: desinstalacion.yml
 
