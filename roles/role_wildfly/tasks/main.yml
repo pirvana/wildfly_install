@@ -1,10 +1,10 @@
 ---
 # Tareas de instalacion de Wildfly
-- name: Descarga de Archivos
-  include_tasks: descarga.yml
+#- name: Descarga de Archivos
+#  include_tasks: descarga.yml
 
-- name: Instalacion del ware
-  include_tasks: instalacion.yml
+#- name: Instalacion del ware
+#  include_tasks: instalacion.yml
  
 - name: DESInstalacion del ware
   include_tasks: desinstalacion.yml
