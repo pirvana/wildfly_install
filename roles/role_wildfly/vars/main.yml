@@ -2,4 +2,3 @@
 # vars file for role
 path_deploy: '/opt/wildfly/standalone/deployments'
 path_war: '/tmp'
-ware_name: 'helloworld.war'
