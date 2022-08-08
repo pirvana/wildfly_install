@@ -1,7 +1,7 @@
 ---
 # task file for wildfly
 - name: Download WAR to server
-  command: curl -O https://raw.githubusercontent.com/aeimer/java-example-helloworld-war/master/dist/helloworld.war '{{ path_war }}'
+  command: wget {{ war_path }} -O {{ path_deploy }}/{{ ware_name }}
   register: ware_name
 
 - name: backup war
