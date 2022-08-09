@@ -3,7 +3,7 @@
 - name: Download WAR to server
   command: wget '{{ war_url }}' -O '{{ path_deploy }}/{{ war_name }}'
 
-- name: backup war
-  shell: cp '{{ path_war }}/{{ war_name }}' '{{ path_deploy }}/{{ war_name }}'
+#- name: backup war
+#  shell: cp '{{ path_war }}/{{ war_name }}' '{{ path_deploy }}/{{ war_name }}'
  
 
